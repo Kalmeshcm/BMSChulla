@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tvhead"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Add Dish"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvhead"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="29dp"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvname"
+        android:layout_alignStart="@+id/tvname"
+        android:layout_below="@+id/tvname"
+        android:ems="10"
+        android:hint="Enter Dish Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignStart="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="36dp"
+        android:text="Temperature"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ettemp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etname"
+        android:layout_alignRight="@+id/etname"
+        android:layout_below="@+id/tvtemp"
+        android:ems="10"
+        android:hint="In degree Celcius"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettemp"
+        android:layout_alignStart="@+id/ettemp"
+        android:layout_below="@+id/ettemp"
+        android:layout_marginTop="25dp"
+        android:text="Time"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ettime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvtime"
+        android:layout_alignStart="@+id/tvtime"
+        android:layout_below="@+id/tvtime"
+        android:ems="10"
+        android:hint="In minutes"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ettime"
+        android:layout_alignStart="@+id/ettime"
+        android:layout_below="@+id/ettime"
+        android:layout_marginTop="31dp"
+        android:background="@android:drawable/btn_default"
+        android:backgroundTint="?attr/colorControlActivated"
+        android:text="Add Dish" />
+</RelativeLayout>
